@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&family=Share+Tech+Mono&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  --font-mono: "Share Tech Mono", "JetBrains Mono", monospace;
+
+  --color-cyber-dark: #050505;
+  --color-cyber-panel: #111111;
+  --color-cyber-blue: #0a1128;
+  --color-neon-red: #ff0033;
+  --color-neon-yellow: #ffcc00;
+  --color-neon-cyan: #00ffff;
+}
+
+@utility neon-text-red {
+  text-shadow: 0 0 6px rgba(255, 0, 51, 0.6), 0 0 12px rgba(255, 0, 51, 0.3);
+}
+
+@utility neon-text-yellow {
+  text-shadow: 0 0 6px rgba(255, 204, 0, 0.6), 0 0 12px rgba(255, 204, 0, 0.3);
+}
+
+@utility neon-text-cyan {
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.6), 0 0 12px rgba(0, 255, 255, 0.3);
+}
+
+@utility neon-border-red {
+  box-shadow: 0 0 10px rgba(255, 0, 51, 0.45), inset 0 0 5px rgba(255, 0, 51, 0.2);
+  border-color: #ff0033;
+}
+
+@utility neon-border-yellow {
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.45), inset 0 0 5px rgba(255, 204, 0, 0.2);
+  border-color: #ffcc00;
+}
+
+@utility neon-border-cyan {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.45), inset 0 0 5px rgba(0, 255, 255, 0.2);
+  border-color: #00ffff;
+}
+
+@utility neon-shadow-inset-red {
+  box-shadow: inset 0 0 12px rgba(255, 0, 51, 0.25);
+}
+
+@utility neon-shadow-inset-cyan {
+  box-shadow: inset 0 0 12px rgba(0, 255, 255, 0.25);
+}
+
+/* Custom Scanlines styling for retro-futuristic monitors */
+.scanlines {
+  position: relative;
+  overflow: hidden;
+}
+.scanlines::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 10;
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
+

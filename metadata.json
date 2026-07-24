@@ -1,0 +1,6 @@
+{
+  "name": "1945 Retro Shooter",
+  "description": "A classic, high-octane 1945-style arcade shoot 'em up game featuring legendary fighter aircraft, weapon upgrades, boss battles, and a local high score board. Built with high-performance HTML5 Canvas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
